@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# settings.py
+
+CELERY_BROKER_URL = 'amqp://localhost'  # Assuming RabbitMQ is running on localhost
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0' #if using Redis
 
 # Application definition
 
